@@ -50,32 +50,37 @@ class Database:
     def create_many(self, records: Iterable[Dict]) -> bool:
         return self.collection.insert_many(records).acknowledged
 
-    # def read_many(self, query: Dict) -> Iterator[Dict]:
-    #     return self.collection.find(query, {"_id": False})
-    #
-    # def update_many(self, query: Dict, update: Dict) -> bool:
-    #     return self.collection.update_many(query, {"$set": update}).acknowledged
-    #
-    # def delete_many(self, query: Dict) -> bool:
-    #     return self.collection.delete_many(query).acknowledged
+    def read_many(self, query: Dict) -> Iterator[Dict]:
+        return self.collection.find(query, {"_id": False})
+
+    def update_many(self, query: Dict, update: Dict) -> bool:
+        return self.collection.update_many(query, {"$set": update}).acknowledged
+
+    def delete_many(self, query: Dict) -> bool:
+        return self.collection.delete_many(query).acknowledged
 
     def seed(self, amount):
-        pass
+        records = [Monster().to_dict() for _ in range(amount)]
+        return self.create_many(records)
 
     def reset(self):
-        pass
+        records = {}
+        return self.delete_many(records)
 
     def count(self) -> int:
         # client = MongoClient(getenv("DB_URL"), tlsCAFile=where())
         # db = client['Database']
         # collection = db['Monsters']
         # Use the count_documents method to get the count of documents in the collection
-        count = self.collection.count_documents({})  # {} means no filter, so it counts all documents
+        query = {}
+        count = self.collection.count_documents(query)  # {} means no filter, so it counts all documents
         print(f'There are {count} documents in the collection.')
         return count
 
     def dataframe(self) -> DataFrame:
-        pass
+        query = {}
+        df = DataFrame(list(self.read_many(query)))
+        return df
 
     def html_table(self) -> str:
         return 'here\'s the table'

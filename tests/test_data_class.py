@@ -9,6 +9,12 @@ from MonsterLab import Monster
 
 print(sys.path)
 
+# TODO: Add support for all test cases for empty databases
+# TODO: Add the ability to wipe the database and create a new one for some test cases
+# TODO: Add to the text fixture known, needed types for the the tests.
+# TODO: Add asserts to check all of the bools, acknowledges returned.
+# TODO: Add logging output: test_name: '', result: PASS or FAIL, print() outputs.
+
 # Setup a fixture to provide a test database connection
 @pytest.fixture
 def test_db():
@@ -145,3 +151,98 @@ def test_create_many_10():
     # Assert some things:
     assert len(monsters) == 10
     # Assert that 10 new monsters have been added to the database (the overall count has increased 10?)
+
+def test_read_many_random():
+    # Create an instance of the Database class
+    database = Database()
+
+    # Call the create_one method
+    query = {'Type': 'Dragon'}
+    result = database.read_many(query)
+    print(result)
+
+    # Assert something about the result (e.g., that it's True, or check the database to make sure the record was inserted)
+    assert result is not None
+    # assert result.length > 1
+
+
+def test_update_many_demonic_monsters():
+    # Create an instance of the Database class
+    database = Database()
+
+    # Update query
+    query = {'Type': 'Demonic'}
+
+    # Update info
+    update = {
+        'Name': 'Demonic Monster Health 150',
+        'Health' : 150.00
+    }
+
+    database.update_one(query, update)
+
+    # Assert that the correct records have been updated
+    first_monster = database.read_one({'Name': 'Demonic Monster Health 150'})
+    print(first_monster)
+    health = first_monster['Health']
+    print(health)
+    assert health == 150
+
+def test_delete_many_Undead():
+    # Create an instance of the Database class
+    database = Database()
+
+    query = {'Type': 'Undead'}
+
+    database.delete_many(query)
+
+    # Assert deletion has happened
+    assert database.read_one(query) == None
+
+def test_seed_100():
+    # TODO: get rid of these database creations. The fixture should be good enough.
+    # Create an instance of the Database class
+    database = Database()
+
+    # Create 100 monsters
+    # monsters = [Monster().to_dict() for _ in range(100)]
+    #print(monsters)
+
+    # for monster in monsters:
+    #     database.create_one(monster)
+
+    # database.create_many(monsters)
+    database.seed(100)
+
+    # Assert some things:
+    # TODO: Assert that the number of monsters has increased by 100 in the database.
+    # assert len(monsters) == 100
+    # Assert that 10 new monsters have been added to the database (the overall count has increased 10?)
+
+
+# def test_reset_delete_all():
+#     # Create an instance of the Database class
+#     database = Database()
+#
+#     query = {}
+#
+#     database.reset()
+#
+#     # Assert deletion has happened
+#     assert database.read_one(query) == None
+
+def test_count():
+    database = Database()
+
+    print(database.count())
+
+
+def test_dataframe():
+    database = Database()
+
+    df = database.dataframe()
+    #print(df[0])
+    print('First item in the dataframe object is: ', df.head(1))
+
+    # Assert dataframe object contains all objects in collection
+    assert df.shape[0] == database.count()
