@@ -220,16 +220,16 @@ def test_seed_100():
     # Assert that 10 new monsters have been added to the database (the overall count has increased 10?)
 
 
-# def test_reset_delete_all():
-#     # Create an instance of the Database class
-#     database = Database()
-#
-#     query = {}
-#
-#     database.reset()
-#
-#     # Assert deletion has happened
-#     assert database.read_one(query) == None
+def test_reset_delete_all():
+    # Create an instance of the Database class
+    database = Database()
+
+    query = {}
+
+    database.reset()
+
+    # Assert deletion has happened
+    assert database.read_one(query) == None
 
 def test_count():
     database = Database()
@@ -246,3 +246,14 @@ def test_dataframe():
 
     # Assert dataframe object contains all objects in collection
     assert df.shape[0] == database.count()
+
+def test_html_table():
+    database = Database()
+
+    table_string = database.html_table()
+
+    print(table_string[1:6])
+
+    print(table_string)
+
+    assert table_string[1:6] == 'table'

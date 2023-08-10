@@ -8,15 +8,27 @@ from MonsterLab import Monster
 from pandas import DataFrame
 from pymongo import MongoClient
 
+# TODO: Noticed a bug while making the html_table: the Example Monster Updated,
+#  Copper Drake doesn't have a timestamp. Has NaN instead.
 
+''' 
+The Database class is an interface between a Pymongo database
+hosted on Atlas https://cloud.mongodb.com/ using MongoClient.
+The interface supports CRUD, and has business logic functions as well.
+There are also functions to seed the database, reset it, wrap the data 
+in a dataframe, and create an html table from the dataframe.
+'''
 class Database:
+    '''
+    The init function creates a connection to the Atlas hosted database
+    using a environment file string. And also sets class variables for
+    the database 'db' and the Monster collection 'collection'
+    '''
     def __init__(self):
         # Load environmental variables
         load_dotenv()
 
         # Create a connection to the MongoDB server
-        # client = MongoClient(getenv("DB_URL"), tlsCAFile=where())['Database']
-        # client = MongoClient('localhost', 27017)
         self.client = MongoClient(getenv("DB_URL"), tlsCAFile=where())
 
         # Select the database
@@ -25,22 +37,46 @@ class Database:
         # Select the collection
         self.collection = self.db['Monsters']
 
-    # def __init__(self, collection: str):
-    #     self.collection = self.database[collection]
-    #
+    '''
+    CRUD operation create_one creates a single Monster in the database.
+    If no input Monster record is given, it creates a random Monster.
+    It uses the pymongo insert_one method: https://pymongo.readthedocs.io/en/stable/api/pymongo/collection.html#pymongo.collection.Collection.insert_one
+    It returns a bool as type pymongo.results.InsertOneResult 
+    '''
     def create_one(self, record: Dict = None) -> bool:
         if record is None:
             record = Monster().to_dict()
         return self.collection.insert_one(record).acknowledged
 
+    '''
+    CRUD operation read_one reads a single record matching the query
+    If no query is given, then it returns the first record.
+    In the MongoDB context, passing None as the query to find_one will 
+    return the first document in the collection without any filter, 
+    excluding the _id field.
+    '''
+    # TODO: Make the if block usable where this function returns a random record.
+    #   Right now it returns the first record every time.
     def read_one(self, query: Dict = None) -> Dict:
-        if query is None:
-            pipeline = [
-                {'$sample': {'size': 1}}
-            ]
-            record = list(self.collection.aggregate(pipeline))
+        # if query is None:
+        #     pipeline = [
+        #         {'$sample': {'size': 1}}
+        #     ]
+        #     record = list(self.collection.aggregate(pipeline))
         return self.collection.find_one(query, {"_id": False})
 
+    '''
+    CRUD operation update_one takes a query and an update dictionary
+    and updates the the first matching record to the query with the new info.
+    The $set operator replaces the value of the field or creates it if is does
+    not exist.
+    Returns a pymongo.results.UpdateResult which has properties: acknowledged, 
+    matched_count (num of docs matching), modified_count (num of docs modified),
+    raw_result(raw doc returned from server), upserted_id (id of upserted doc)
+    '''
+    # TODO: Should we change these CRUD operations to return the full objects?
+    #   Right now they only return the bool 'acknowledged' and drop the other
+    #   object info - like counts of updated records, etc.
     def update_one(self, query: Dict, update: Dict) -> bool:
         return self.collection.update_one(query, {"$set": update}).acknowledged
 
@@ -83,7 +119,10 @@ class Database:
         return df
 
     def html_table(self) -> str:
-        return 'here\'s the table'
+        df = self.dataframe()
+        html_table = df.to_html(border=1, classes='dataframe', index=True)
+        return html_table
+        # return 'here\'s the table'
 
 if __name__ == '__main__':
     #db = Database("Collection")
