@@ -50,9 +50,9 @@ The `main.py` file has a global variable `SPRINT`. You should set this variable 
 - [?] The TLS certificate authority file is properly configured and used to establish a secure connection to the database.
 
 ### 4. Documentation & Style
-- [IP] The code includes docstrings explaining the purpose and behavior of each component.
-- [ ] The code includes no extraneous comments and no inline print statements.
-- [ ] The code follows PEP style guide.
+- [x] The code includes docstrings explaining the purpose and behavior of each component.
+- [x] The code includes no extraneous comments and no inline print statements.
+- [x] The code follows PEP style guide.
 
 #### Example Database Interface: CRUD Operations
 ```python

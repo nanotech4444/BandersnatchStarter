@@ -17,6 +17,7 @@ logging.basicConfig(filename='application.log', level=logging.DEBUG)
 SPRINT = 1
 APP = Flask(__name__)
 
+
 @APP.route("/")
 def home():
     return render_template(

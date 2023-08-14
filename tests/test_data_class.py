@@ -9,6 +9,7 @@ from MonsterLab import Monster
 
 print(sys.path)
 
+
 # TODO: Add support for all test cases for empty databases
 # TODO: Add the ability to wipe the database and create a new one for some test cases
 # TODO: Add to the text fixture known, needed types for the the tests.
@@ -27,9 +28,11 @@ def test_db():
     db = client['Database']
 
     # Select the collection
-    collection = db['Monsters']
+    # TODO: use this collection object in a test.
+    # collection = db['Monsters']
 
     yield db
+
 
 # Example test for the create_one function
 # def test_create_one(test_db):
@@ -48,6 +51,7 @@ def test_db():
 #     assert created_monster["name"] == "Test Monster"
 #     assert created_monster["type"] == "Dragon"
 
+
 def test_create_one_example():
     # Create an instance of the Database class
     database = Database()
@@ -58,8 +62,10 @@ def test_create_one_example():
     # Call the create_one method
     result = database.create_one(record)
 
-    # Assert something about the result (e.g., that it's True, or check the database to make sure the record was inserted)
-    assert result == True
+    # Assert something about the result (e.g., that it's True, or check the database to make sure the record was
+    # inserted)
+    assert result
+
 
 def test_create_one_random():
     # Create an instance of the Database class
@@ -68,8 +74,9 @@ def test_create_one_random():
     # Call the create_one method
     result = database.create_one()
 
-    # Assert something about the result (e.g., that it's True, or check the database to make sure the record was inserted)
-    assert result == True
+    # Assert something about the result (e.g., that it's True, or check the database to make sure the record was
+    # inserted)
+    assert result
 
 
 def test_read_one_demonic():
@@ -87,6 +94,7 @@ def test_read_one_demonic():
     assert record is not None
     assert record['Type'] == 'Demonic'
 
+
 def test_read_one_random():
     # Create an instance of the Database class
     database = Database()
@@ -95,7 +103,8 @@ def test_read_one_random():
     result = database.read_one()
     print(result)
 
-    # Assert something about the result (e.g., that it's True, or check the database to make sure the record was inserted)
+    # Assert something about the result (e.g., that it's True, or check the database to make sure the record was
+    # inserted)
     assert result is not None
 
 
@@ -113,8 +122,8 @@ def test_update_one_example_monster():
         'Type': 'Copper Drake',
         'Level': 42,
         'Rarity': 'Rank 2',
-        'Damage' : '42d4+1',
-        'Health' : 89.72,
+        'Damage': '42d4+1',
+        'Health': 89.72,
         'Energy': 130.03,
         'Sanity': 83.58
     }
@@ -152,6 +161,7 @@ def test_create_many_10():
     assert len(monsters) == 10
     # Assert that 10 new monsters have been added to the database (the overall count has increased 10?)
 
+
 def test_read_many_random():
     # Create an instance of the Database class
     database = Database()
@@ -161,7 +171,8 @@ def test_read_many_random():
     result = database.read_many(query)
     print(result)
 
-    # Assert something about the result (e.g., that it's True, or check the database to make sure the record was inserted)
+    # Assert something about the result (e.g., that it's True, or check the database to make sure the record was
+    # inserted)
     assert result is not None
     # assert result.length > 1
 
@@ -176,7 +187,7 @@ def test_update_many_demonic_monsters():
     # Update info
     update = {
         'Name': 'Demonic Monster Health 150',
-        'Health' : 150.00
+        'Health': 150.00
     }
 
     database.update_one(query, update)
@@ -188,7 +199,8 @@ def test_update_many_demonic_monsters():
     print(health)
     assert health == 150
 
-def test_delete_many_Undead():
+
+def test_delete_many_undead():
     # Create an instance of the Database class
     database = Database()
 
@@ -197,7 +209,8 @@ def test_delete_many_Undead():
     database.delete_many(query)
 
     # Assert deletion has happened
-    assert database.read_one(query) == None
+    assert database.read_one(query) is None
+
 
 def test_seed_100():
     # TODO: get rid of these database creations. The fixture should be good enough.
@@ -206,7 +219,7 @@ def test_seed_100():
 
     # Create 100 monsters
     # monsters = [Monster().to_dict() for _ in range(100)]
-    #print(monsters)
+    # print(monsters)
 
     # for monster in monsters:
     #     database.create_one(monster)
@@ -229,7 +242,8 @@ def test_reset_delete_all():
     database.reset()
 
     # Assert deletion has happened
-    assert database.read_one(query) == None
+    assert database.read_one(query) is None
+
 
 def test_count():
     database = Database()
@@ -241,11 +255,12 @@ def test_dataframe():
     database = Database()
 
     df = database.dataframe()
-    #print(df[0])
+    # print(df[0])
     print('First item in the dataframe object is: ', df.head(1))
 
     # Assert dataframe object contains all objects in collection
     assert df.shape[0] == database.count()
+
 
 def test_html_table():
     database = Database()
