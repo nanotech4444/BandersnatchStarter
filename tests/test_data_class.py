@@ -232,6 +232,26 @@ def test_seed_100():
     # assert len(monsters) == 100
     # Assert that 10 new monsters have been added to the database (the overall count has increased 10?)
 
+def test_seed_1000():
+    # TODO: get rid of these database creations. The fixture should be good enough.
+    # Create an instance of the Database class
+    database = Database()
+
+    # Create 1000 monsters
+    # monsters = [Monster().to_dict() for _ in range(100)]
+    # print(monsters)
+
+    # for monster in monsters:
+    #     database.create_one(monster)
+
+    # database.create_many(monsters)
+    database.seed(1000)
+
+    # Assert some things:
+    # TODO: Assert that the number of monsters has increased by 100 in the database.
+    # assert len(monsters) == 100
+    # Assert that 10 new monsters have been added to the database (the overall count has increased 10?)
+
 
 def test_reset_delete_all():
     # Create an instance of the Database class
