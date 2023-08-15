@@ -10,7 +10,11 @@ from app.data import Database
 from app.graph import chart
 from app.machine import Machine
 
-SPRINT = 0
+import logging
+
+logging.basicConfig(filename='application.log', level=logging.DEBUG)
+
+SPRINT = 1
 APP = Flask(__name__)
 
 
@@ -97,4 +101,4 @@ def model():
 
 
 if __name__ == '__main__':
-    APP.run()
+    APP.run(debug=True)
