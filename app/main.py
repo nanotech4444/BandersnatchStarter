@@ -14,7 +14,7 @@ import logging
 
 logging.basicConfig(filename='application.log', level=logging.DEBUG)
 
-SPRINT = 1
+SPRINT = 2
 APP = Flask(__name__)
 
 
