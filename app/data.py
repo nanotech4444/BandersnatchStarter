@@ -9,9 +9,6 @@ from pandas import DataFrame
 from pymongo import MongoClient
 
 
-# TODO: Noticed a bug while making the html_table: the Example Monster Updated,
-#  Copper Drake doesn't have a timestamp. Has NaN instead.
-# TODO: Change casing of all attributes and methods to be consistent.
 class Database:
     """
     The Database class is an interface between a Pymongo database
@@ -111,8 +108,6 @@ class Database:
             record = Monster().to_dict()
         return self.collection.insert_one(record).acknowledged
 
-    # TODO: Make the if block usable where this function returns a random record.
-    #   Right now it returns the first record every time.
     def read_one(self, query: Dict = None) -> Dict:
         """
         CRUD method: reads a single record matching the query.
@@ -125,7 +120,6 @@ class Database:
         :param query: Dict, the attributes to find a single Monster.
         :return: Dict, the attributes of the found Monster.
         """
-        # TODO: handle the case where query is None.
         # if query is None:
         #     pipeline = [
         #         {'$sample': {'size': 1}}
@@ -133,9 +127,6 @@ class Database:
         #     record = list(self.collection.aggregate(pipeline))
         return self.collection.find_one(query, {"_id": False})
 
-    # TODO: Should we change these CRUD operations to return the full objects?
-    #   Right now they only return the bool 'acknowledged' and drop the other
-    #   object info - like counts of updated records, etc.
     def update_one(self, query: Dict, update: Dict) -> bool:
         """
         CRUD method: updates a record in the database using a query and an update dictionary.
@@ -153,8 +144,6 @@ class Database:
         """
         return self.collection.update_one(query, {"$set": update}).acknowledged
 
-    # TODO: Add to docstring how method handles multiple matching Monsters.
-    #   Deletes first found?
     def delete_one(self, query: Dict) -> bool:
         """
         CRUD method: deletes a single record in the database using a query.
