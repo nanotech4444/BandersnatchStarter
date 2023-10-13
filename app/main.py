@@ -110,10 +110,7 @@ def model():
 
         options = ["Level", "Health", "Energy", "Sanity", "Rarity"]
         prediction, confidence = machine(DataFrame([dict(zip(options, (level, health, energy, sanity)))]))
-        print(f"Labels are: {machine.labels}, type: {type(machine.labels)}")
         string_prediction = machine.labels[prediction]
-        print(f"String prediction is: {string_prediction}")
-        print(f"Prediction {prediction}. Confidence {confidence}")
 
 
         # Make a new Prediction.
@@ -123,38 +120,33 @@ def model():
         # Delete the model.
         # Then create a new Machine instance
         retrain = request.form.get('retrain')
-        print(f"Retrain: {retrain}")
 
         if retrain == 'True':
             # Checkbox was checked
-            print("Retrain is checked")
             filepath = os.path.join(PROJECT_ROOT, 'app', 'model.joblib')
 
             # Check if the model file exists, then delete it
             if os.path.exists(filepath):
                 os.remove(filepath)
-                print(f"Model file at {filepath} has been deleted")
 
                 machine.retrain(df)
 
                 options = ["Level", "Health", "Energy", "Sanity", "Rarity"]
                 prediction, confidence = machine(DataFrame([dict(zip(options, (level, health, energy, sanity)))]))
-                print(f"Labels are: {machine.labels}, type: {type(machine.labels)}")
                 string_prediction = machine.labels[prediction]
-                print(f"String prediction is: {string_prediction}")
-                print(f"Prediction {prediction}. Confidence {confidence}")
 
             else:
-                print(f"No such model file at {filepath}")
+                #
+                pass
 
         else:
             # Checkbox was not checked
-            print("Retrain is not checked")
             # Option B - no retrain)
             # If the user changes those numbers and clicks ‘predict rarity’ (without ‘Retrain’
             # clicked) then use the existing loaded model, and new numbers, to make a prediction and return that
             # prediction.
             # The prediction/confidence will change automatically as the page is reloaded when the button is clicked.
+            pass
 
         return render_template(
             "model.html",
