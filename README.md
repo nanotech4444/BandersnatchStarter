@@ -12,7 +12,7 @@
 - Demo: https://bandersnatch-demo.replit.app/
 - Landing Page: https://monstercards.carrd.co/
 
-| ![Image1](URL_TO_IMAGE1) | ![Image2](URL_TO_IMAGE2) | ![Image3](URL_TO_IMAGE3) |
+| ![Image1]([URL_TO_IMAGE1](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Repo.png)) | ![Image2]([URL_TO_IMAGE2](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Demo.png)) | ![Image3]([URL_TO_IMAGE3](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Landing%20Page.png)) |
 |:-----------------------:|:-----------------------:|:-----------------------:|
 | Github: https://github.com/nanotech4444/BandersnatchStarter     | Demo: https://bandersnatch-demo.replit.app/     | Landing Page: https://monstercards.carrd.co/     |
 
