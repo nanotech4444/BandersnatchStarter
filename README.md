@@ -12,6 +12,8 @@
 |:-----------------------:|:-----------------------:|
 | [Demo](https://bandersnatch-demo.replit.app/)  | [Landing Page](https://monstercards.carrd.co/)     |
 
+### Code Example
+
 
 ### Tech Stack
 - Logic: Python 3.8
@@ -92,3 +94,13 @@ Environment variable
 3. Digital Collectibles: Digital card images with downloaded NFTs to ensure uniqueness and rarity.
 4. Real Item Collectibles: Printed cards with embedded RFID chips with noncopyable NFTs in them.
 5. White Label Platform: Convert into a white label platform for creators to use to create card decks with any theme of AI created images and/or text on them.
+
+### Credits and Thanks
+Credit goes to:
+	- [Robert Sharp](https://github.com/BrokenShell) who created [MonsterLab](https://github.com/BrokenShell/MonsterLab) which is the basis for this project.
+Credit also goes to the Bloomtech team who made this project for students: [Original Project](https://bandersnatch.herokuapp.com/)
+	- April Fairweather: Database Engineer
+	- Thackery Binx: Data Analyst
+	- Eugene Albright: Machine Learning Engineer
+Thanks goes to:
+ 	- [Royce Roberts](https://www.linkedin.com/in/royceroberts/) at Bloomtech for his help.
