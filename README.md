@@ -55,13 +55,13 @@
 1. Sprint 1:
 	- Initial project setup: 
 2. Sprint 2:
-	-
+	- df
 3. Sprint 3:
-	-
+	- sdf
 4. Sprint 4:
-   	-
+   	- sdf
 5. Sprint 5:
-   	-
+   	- sfd
 
 ### General Development Procedure
 1. Fully understand the requirements. Try to delete dumb ones.
