@@ -1,5 +1,8 @@
 # Bandersnatch Monster Cards
 
+### Business Value
+- Created a Landing Page (as a lead magnet) to drive sales of Monster Cards - 52 card deck playing cards.
+
 ### What this is:
 - Order a 52 card deck of Monster playing cards with more rare monsters as highest value. Ex a very rare Dragon might be the Ace of Diamonds.
 - Originally, this was a Bloomtech Labs Data Science project centered on regression to predict Monster rarity.
@@ -8,9 +11,6 @@
 - Github: https://github.com/nanotech4444/BandersnatchStarter
 - Demo: https://bandersnatch-demo.replit.app/
 - Landing Page: https://monstercards.carrd.co/
-
-### Business Value
-- Created a Landing Page (as a lead magnet) to drive sales of Monster Cards - 52 card deck playing cards.
 
 ### Tech Stack
 - Logic: Python 3.8
@@ -68,3 +68,5 @@ Everything can be improved.
 Python 3.8, Flask, Jinja2, HTML5, CSS3, MongoDB, Altair, Scikit-learn, Replit.com, MongoDB.com, Carrd.co
 Environment variable
 
+### BONUS! Potential Expansions in Business Value
+1. NFTs
