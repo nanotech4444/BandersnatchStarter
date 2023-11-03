@@ -3,17 +3,18 @@
 ### Business Value
 - Created a Landing Page (as a lead magnet) to drive sales of Monster Cards - 52 card deck playing cards.
 
-
 ### What this is:
 - Order a 52 card deck of Monster playing cards with more rare monsters as highest value. Ex a very rare Dragon might be the Ace of Diamonds.
 - Originally, this was a Bloomtech Labs Data Science project centered on regression to predict Monster rarity.
 
+<br>
 
 ### See it
 | ![Demo](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Demo.png) | ![LandingPage](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Landing%20Page.png) |
 |:-----------------------:|:-----------------------:|
 | [Demo](https://bandersnatch-demo.replit.app/)  | [Landing Page](https://monstercards.carrd.co/)     |
 
+<br>
 
 ### Code Example: How to run this Flask app
 <pre>
@@ -24,6 +25,7 @@ function sayHello() {
 \```
 </pre>
 
+<br>
 
 ### Tech Stack
 - Logic: Python 3.8
@@ -38,6 +40,7 @@ function sayHello() {
 - Database Hosting: MongoDB.com
 - Landing Page Hosting: Carrd.co
 
+<br>
 
 ### Demo Pages by URL
 - `/`: Home Page
@@ -45,6 +48,7 @@ function sayHello() {
 - `/view`: Dynamic Visualizations
 - `/model`: Interactive Machine Learning Model
 
+<br>
 
 ### Development Tickets
 1. Sprint 1: Database Operations - Loom Video
@@ -65,6 +69,7 @@ function sayHello() {
 	- Create Landing Page on Carrd.co
 	- Add AI created Monster images
 
+<br>
 
 ### Development Challenges
 1. Sprint 1:
@@ -78,6 +83,7 @@ function sayHello() {
 5. Sprint 5:
    	- sfd
 
+<br>
 
 ### General Development Procedure
 1. Fully understand the requirements. Try to delete dumb ones.
@@ -88,6 +94,7 @@ function sayHello() {
 6. Code.
 7. Iterate.
 
+<br>
 
 ### Further Improvements
 "Without continual growth and progress, such words as improvement, achievement, and success have no meaning." – Benjamin Franklin
@@ -96,12 +103,14 @@ Here's what I would like to improve.
 
 1. Better docstrings for the Machine class (docstrings in the Database class are textbook!)
 
+<br>
 
 ### Keywords
 Python 3.8, Flask, Jinja2, HTML5, CSS3, MongoDB, Altair, Scikit-learn, Replit.com, MongoDB.com, Carrd.co
 
 Environment variable
 
+<br>
 
 ### BONUS! Potential Expansions in Business Value
 1. Unique Monster Battle Card Game: Magic into being rules for a game where Monsters fight in armies as cards held in decks by players doing battle with one another. With magical attack, swords, armor and keeping track of health points and mana.
@@ -110,6 +119,7 @@ Environment variable
 4. Real Item Collectibles: Printed cards with embedded RFID chips with noncopyable NFTs in them.
 5. White Label Platform: Convert into a white label platform for creators to use to create card decks with any theme of AI created images and/or text on them.
 
+<br>
 
 ### Credits and Thanks
 Credit goes to:
