@@ -6,15 +6,16 @@ Read the Documentation for information on how to get started.
 
 
 ### Tech Stack
-- Logic: Python3
+- Logic: Python 3.8
 - API Framework: Flask
 - Templates: Jinja2
 - Structure: HTML5
 - Styling: CSS3
 - Database: MongoDB
 - Graphs: Altair
-- Machine Learning: Scikit
-- Hosting: Heroku
+- Machine Learning: Scikit-Learn
+- App Hosting: Replit
+- Database Hosting: MongoDB.com
 
 ### Provided Code
 - HTML Templates
@@ -46,17 +47,7 @@ For best results, complete each sprint in order, before going on to the next spr
 	- Model serialization (save and open)
 	- API model integration
 
-### Stretch Goals
-- Use ElephantSQL instead of MongoDB
-- Use Plotly instead of Altair
-- Use PyTorch instead of Scikit
-- Use FastAPI instead of Flask
-- Add the ability for the user to reset & reseed the database
-- Add the ability for the user to re-train the machine learning model
-- Add the ability for the user to download a working serialized model and dataset
-- Add authentication to sensitive pages
-- Use a different set of features to train the model
-- Use your own dataset entirely
+
 
 
 ### OS Specific Notes: Gunicorn is not Windows compatible!
