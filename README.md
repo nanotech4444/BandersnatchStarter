@@ -52,7 +52,7 @@
 	- Create Landing Page on Cardd
 	- Add AI created Monster images
 
-### Challenges
+### Development Challenges
 1. Sprint 1:
 	- Initial project setup: 
 3. Sprint 2:
@@ -60,7 +60,7 @@
 5. Sprint 4:
 6. Sprint 5:
 
-### Improvements
+### Further Improvements
 Everything can be improved.
 
 1. 
