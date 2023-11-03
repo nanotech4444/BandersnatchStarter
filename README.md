@@ -105,7 +105,7 @@ Environment variable
 Credit goes to:
 - :clap: [Robert Sharp](https://github.com/BrokenShell) who created [MonsterLab](https://github.com/BrokenShell/MonsterLab) which is the basis for this project.
  
-Credit also goes to the Bloomtech team who made this project for students: [Original Project](https://bandersnatch.herokuapp.com/)
+Credit also goes to the Bloomtech team who made the [original version](https://bandersnatch.herokuapp.com/) of this project for students
 - :clap: April Fairweather: Database Engineer
 - :clap: Thackery Binx: Data Analyst
 - :clap: Eugene Albright: Machine Learning Engineer
