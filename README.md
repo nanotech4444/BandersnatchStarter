@@ -13,7 +13,13 @@
 | [Demo](https://bandersnatch-demo.replit.app/)  | [Landing Page](https://monstercards.carrd.co/)     |
 
 ### Code Example
-
+<pre>
+\```javascript
+function sayHello() {
+    console.log("Hello, World!");
+}
+\```
+</pre>
 
 ### Tech Stack
 - Logic: Python 3.8
