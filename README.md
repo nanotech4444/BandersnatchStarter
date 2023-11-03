@@ -38,34 +38,47 @@
 	- Create random data
 	- Populate the database with at least 1000 datapoints
 2. Sprint 2: Dynamic Visualizations - Loom Video
-	- Notebook exploration
+	- Notebook exploration of charts
 	- Chart function
-	- API integration
 3. Sprint 3: Machine Learning Model - Loom Video
-	- Notebook exploration
+	- Notebook exploration of scikit-learn data models
 	- Machine Learning interface class
 	- Model serialization (save and open)
-	- API model integration
+	- Model integration
 4. Sprint 4: Deployment - Loom Video
    	- Deploy Demo to Replit
 5. Sprint 5: Landing Page - Loom Video
-	- Create Landing Page on Cardd
+	- Create Landing Page on Carrd.co
 	- Add AI created Monster images
 
 ### Development Challenges
 1. Sprint 1:
 	- Initial project setup: 
-3. Sprint 2:
-4. Sprint 3:
-5. Sprint 4:
-6. Sprint 5:
+2. Sprint 2:
+	-
+3. Sprint 3:
+	-
+4. Sprint 4:
+   	-
+5. Sprint 5:
+   	-
+
+### General Development Procedure
+1. Fully understand the requirements. Try to delete dumb ones.
+2. Explore new libraries, methods in Google Colab Notebooks.
+3. Write psuedocode comments of what I'm trying to accomplish.
+4. Write class method minimal interfaces and attributes.
+5. Write Pytest cases for those methods and attributes.
+6. Code.
+7. Iterate.
 
 ### Further Improvements
 "Without continual growth and progress, such words as improvement, achievement, and success have no meaning." – Benjamin Franklin
 
 Here's what I would like to improve.
 
-1. 
+1. Better docstrings for the Machine class (docstrings in the Database class are textbook!)
+2. 
 
 
 ### Keywords
