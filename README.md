@@ -12,9 +12,9 @@
 - Demo: https://bandersnatch-demo.replit.app/
 - Landing Page: https://monstercards.carrd.co/
 
-| ![Image1](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Repo.png) | ![Image2](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Demo.png) | ![Image3](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Landing%20Page.png) |
+| ![Repo](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Repo.png) | ![Demo](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Demo.png) | ![LandingPage](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Landing%20Page.png) |
 |:-----------------------:|:-----------------------:|:-----------------------:|
-| Github: https://github.com/nanotech4444/BandersnatchStarter     | Demo: https://bandersnatch-demo.replit.app/     | Landing Page: https://monstercards.carrd.co/     |
+| [Github](https://github.com/nanotech4444/BandersnatchStarter)  | [Demo](https://bandersnatch-demo.replit.app/)  | [Landing Page](https://monstercards.carrd.co/)     |
 
 
 ### Tech Stack
@@ -66,11 +66,13 @@
 
 ### Improvements
 Everything can be improved.
+
 1. 
 
 
 ### Keywords
 Python 3.8, Flask, Jinja2, HTML5, CSS3, MongoDB, Altair, Scikit-learn, Replit.com, MongoDB.com, Carrd.co
+
 Environment variable
 
 ### BONUS! Potential Expansions in Business Value
