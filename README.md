@@ -12,9 +12,9 @@
 |:-----------------------:|:-----------------------:|
 | [Demo](https://bandersnatch-demo.replit.app/)  | [Landing Page](https://monstercards.carrd.co/)     |
 
-### Code Example
+### Code Example: How to run this Flask app
 <pre>
-\```javascript
+\```python
 function sayHello() {
     console.log("Hello, World!");
 }
