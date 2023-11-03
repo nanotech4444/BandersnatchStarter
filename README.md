@@ -8,13 +8,9 @@
 - Originally, this was a Bloomtech Labs Data Science project centered on regression to predict Monster rarity.
 
 ### See it
-- Github: https://github.com/nanotech4444/BandersnatchStarter
-- Demo: https://bandersnatch-demo.replit.app/
-- Landing Page: https://monstercards.carrd.co/
-
-| ![Repo](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Repo.png) | ![Demo](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Demo.png) | ![LandingPage](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Landing%20Page.png) |
+| ![Demo](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Demo.png) | ![LandingPage](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Landing%20Page.png) |
 |:-----------------------:|:-----------------------:|:-----------------------:|
-| [Github](https://github.com/nanotech4444/BandersnatchStarter)  | [Demo](https://bandersnatch-demo.replit.app/)  | [Landing Page](https://monstercards.carrd.co/)     |
+| [Demo](https://bandersnatch-demo.replit.app/)  | [Landing Page](https://monstercards.carrd.co/)     |
 
 
 ### Tech Stack
