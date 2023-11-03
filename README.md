@@ -1,7 +1,10 @@
 # Bandersnatch Monster Cards
 
-### Business Value
+### What this is
 
+
+### Business Value
+- Created Landing
 
 
 
@@ -13,13 +16,13 @@
 - Styling: CSS3
 - Database: MongoDB
 - Graphs: Altair
-- Machine Learning: Scikit-Learn
+- Machine Learning: Scikit-learn
 - Demo App Hosting: Replit.com
 - Database Hosting: MongoDB.com
 - Landing Page Hosting: Carrd.co
 
 ### Primary Features by URL
-- `/`: Splash Page
+- `/`: Home Page
 - `/data`: Tabular Data
 - `/view`: Dynamic Visualizations
 - `/model`: Interactive Machine Learning Model
@@ -45,12 +48,15 @@
 	- Add AI created Monster images
 
 ### Challenges
+1. Sprint 1:
+	- Initial project setup: 
+3. Sprint 2:
+4. Sprint 3:
+5. Sprint 4:
+6. Sprint 5:
 
 
+### Keywords
+Python 3.8, Flask, Jinja2, HTML5, CSS3, MongoDB, Altair, Scikit-learn, Replit.com, MongoDB.com, Carrd.co
+Environment variable
 
-### OS Specific Notes: Gunicorn is not Windows compatible!
-- Windows users should not use the `run.sh` shell script, as it depends on gunicorn.
-- Windows users should use `py -m app.main` to start the app with Flask acting as the server.
-- Mac and Linux users can use `./run.sh` script or type the command directly `python3 -m gunicorn app.main:APP`.
-- Feel free to modify the shell scripts to suit your needs, these are intended to run locally.
-- In any case you should not modify the Procfile, this is the run script for the remote server.
