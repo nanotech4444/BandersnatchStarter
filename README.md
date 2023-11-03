@@ -61,7 +61,9 @@
 6. Sprint 5:
 
 ### Further Improvements
-Everything can be improved.
+"Without continual growth and progress, such words as improvement, achievement, and success have no meaning." – Benjamin Franklin
+
+Here's what I would like to improve.
 
 1. 
 
@@ -72,4 +74,8 @@ Python 3.8, Flask, Jinja2, HTML5, CSS3, MongoDB, Altair, Scikit-learn, Replit.co
 Environment variable
 
 ### BONUS! Potential Expansions in Business Value
-1. NFTs
+1. Unique Monster Battle Card Game: Magic into being rules for a game where Monsters fight in armies as cards held in decks by players doing battle with one another. With magical attack, swords, armor and keeping track of health points and mana.
+2. New Card Games: Expand to other standard card games: Monster Go Fish, Monster Pinochle, etc.
+3. Digital Collectibles: Digital card images with downloaded NFTs to ensure uniqueness and rarity.
+4. Real Item Collectibles: Printed cards with embedded RFID chips with noncopyable NFTs in them.
+5. White Label Platform: Convert into a white label platform for creators to use to create card decks with any theme of AI created images and/or text on them.
