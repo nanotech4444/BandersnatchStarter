@@ -12,6 +12,11 @@
 - Demo: https://bandersnatch-demo.replit.app/
 - Landing Page: https://monstercards.carrd.co/
 
+| ![Image1](URL_TO_IMAGE1) | ![Image2](URL_TO_IMAGE2) | ![Image3](URL_TO_IMAGE3) |
+|:-----------------------:|:-----------------------:|:-----------------------:|
+| Caption for Image 1     | Caption for Image 2     | Caption for Image 3     |
+
+
 ### Tech Stack
 - Logic: Python 3.8
 - API Framework: Flask
