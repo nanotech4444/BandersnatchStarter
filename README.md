@@ -1,8 +1,8 @@
-# Bandersnatch Project
+# Bandersnatch Monster Cards
 
-Read the Documentation for information on how to get started.
+### Business Value
 
-[Deployed App](https://bandersnatch.herokuapp.com)
+
 
 
 ### Tech Stack
@@ -14,15 +14,9 @@ Read the Documentation for information on how to get started.
 - Database: MongoDB
 - Graphs: Altair
 - Machine Learning: Scikit-Learn
-- App Hosting: Replit
+- Demo App Hosting: Replit.com
 - Database Hosting: MongoDB.com
-
-### Provided Code
-- HTML Templates
-- CSS Styles
-- API Framework
-- Miscellaneous Helper Files
-- Sprint Specific Documentation
+- Landing Page Hosting: Carrd.co
 
 ### Primary Features by URL
 - `/`: Splash Page
@@ -30,10 +24,8 @@ Read the Documentation for information on how to get started.
 - `/view`: Dynamic Visualizations
 - `/model`: Interactive Machine Learning Model
 
-### Primary Goals
-For best results, complete each sprint in order, before going on to the next sprint.
-
-1. Sprint 1: Database Operations
+### Development Goals
+1. Sprint 1: Database Operations - Loom Video
 	- Develop a database interface class
 	- Create random data
 	- Populate the database with at least 1000 datapoints
@@ -46,7 +38,13 @@ For best results, complete each sprint in order, before going on to the next spr
 	- Machine Learning interface class
 	- Model serialization (save and open)
 	- API model integration
+4. Sprint 4: Deployment
+   	- Deploy Demo to Replit
+5. Sprint 5: Landing Page
+	- Create Landing Page on Cardd
+	- Add AI created Monster images
 
+### Challenges
 
 
 
