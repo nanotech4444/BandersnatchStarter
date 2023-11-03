@@ -1,12 +1,11 @@
 # Bandersnatch Monster Cards
 
 ### What this is
-
+- Order a 52 card deck of Monster playing cards with more rare monsters as highest value. Ex a very rare Dragon might be the Ace of Diamonds.
+- Originally, this was a Bloomtech Labs Data Science project centered on regression to predict Monster rarity.
 
 ### Business Value
-- Created Landing
-
-
+- Created a Landing Page as a strong lead magnet to drive sales of Monster 52 card deck playing cards.
 
 ### Tech Stack
 - Logic: Python 3.8
@@ -32,18 +31,18 @@
 	- Develop a database interface class
 	- Create random data
 	- Populate the database with at least 1000 datapoints
-2. Sprint 2: Dynamic Visualizations
+2. Sprint 2: Dynamic Visualizations - Loom Video
 	- Notebook exploration
 	- Chart function
 	- API integration
-3. Sprint 3: Machine Learning Model
+3. Sprint 3: Machine Learning Model - Loom Video
 	- Notebook exploration
 	- Machine Learning interface class
 	- Model serialization (save and open)
 	- API model integration
-4. Sprint 4: Deployment
+4. Sprint 4: Deployment - Loom Video
    	- Deploy Demo to Replit
-5. Sprint 5: Landing Page
+5. Sprint 5: Landing Page - Loom Video
 	- Create Landing Page on Cardd
 	- Add AI created Monster images
 
