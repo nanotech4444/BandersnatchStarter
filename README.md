@@ -9,7 +9,7 @@
 
 ### See it
 | ![Demo](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Demo.png) | ![LandingPage](https://github.com/nanotech4444/BandersnatchStarter/blob/main/media/Landing%20Page.png) |
-|:-----------------------:|:-----------------------:|:-----------------------:|
+|:-----------------------:|:-----------------------:|
 | [Demo](https://bandersnatch-demo.replit.app/)  | [Landing Page](https://monstercards.carrd.co/)     |
 
 
